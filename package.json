@@ -1,0 +1,33 @@
+{
+  "name": "heta-ico",
+  "version": "1.0.0",
+  "description": "Heta ICO smart contracts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hetachain/ico_smart_contract"
+  },
+  "keywords": [
+    "heta",
+    "ICO",
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "security"
+  ],
+  "author": "Heta Tech",
+  "homepage": "https://heta.org",
+  "devDependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.23.0",
+    "ethereumjs-testrpc": "^4.1.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "solidity-coverage": "^0.5.11",
+    "truffle": "^4.1.11",
+    "zeppelin-solidity": "1.2.0"
+  }
+}
