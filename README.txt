@@ -1,1 +1,1 @@
-Coming soon!
+# HetaChain - A Platform For Smart Economy
