@@ -86,8 +86,6 @@ Event **burn token**.
 
 Used when not all tokens are distributed after ICO.
 
-**Need to finalize the procedure to burn token: when to start and the conditions to burn?**
-
 ```
 function burn(uint256 value) public 
 ```
@@ -96,8 +94,6 @@ Allow to burn a given number of token of a nominated address owner.
 
 Used when not all tokens are distributed after ICO.
 
-**Need to finalize the procedure to burn token: when to start and the conditions to burn?**
-
 ```
 function burnFrom(address from, uint256 value) public 
 ```
@@ -105,8 +101,6 @@ function burnFrom(address from, uint256 value) public
 Allow to burn a given number of the token of a nominated address owner: The parameter is the address and the number of token to burn.
 
 Used when not all tokens are distributed after ICO.
-
-**Need to finalize the procedure to burn token: when to start and the conditions to burn?**
 
 ```
 function TokenTimelock(ERC20Basic _token, address _beneficiary, uint64 _releaseTime) public
@@ -129,15 +123,11 @@ function pause() public
 
 Allow an admin address to pause forwarding the token to other addresses.
 
-**The risk is that the admin address may lose its private key.**
-
 ```
 function resume() public
 ```
 
 Allow an admin address to resume the pause of forwarding the token to other addresses. 
-
-**The risk is that the admin address may lose its private key.**
 
 ### Compiled with [Truffle](https://truffleframework.com/)
 
