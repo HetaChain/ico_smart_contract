@@ -1,1 +1,1 @@
-# <HetaChain - A Platform For Smart Economy>
+ HetaChain - A Platform For Smart Economy
