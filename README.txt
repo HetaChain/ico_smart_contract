@@ -1,193 +1,167 @@
-# HetaChain - A Platform For Smart Economy
+<h1 id="hetachainaplatformforsmarteconomy">HetaChain - A Platform For Smart Economy</h1>
 
-Too many blockchain projects build solutions that don’t work, for problems that don’t exist. Through our strategic partners, we created a global network of businesses that were asking for blockchain solutions, and defined a feature set based on their needs. We saw the opportunity to build a blockchain platform with broad applications across government, business, and communities.
+<p>Too many blockchain projects build solutions that don’t work, for problems that don’t exist. Through our strategic partners, we created a global network of businesses that were asking for blockchain solutions, and defined a feature set based on their needs. We saw the opportunity to build a blockchain platform with broad applications across government, business, and communities.</p>
 
-Click [here](https://heta.org/) to get more information.  
+<p>Click <a href="https://heta.org/">here</a> to get more information.  </p>
 
-## SMART CONTRACT FEATURES
+<h2 id="smartcontractfeatures">SMART CONTRACT FEATURES</h2>
 
-```
-function name() public pure returns(string)
-```
+<pre><code>function name() public pure returns(string)
+</code></pre>
 
-Return token name: Heta Token.
+<p>Return token name: Heta Token.</p>
 
-```
-function symbol() public pure returns(string)
-```
+<pre><code>function symbol() public pure returns(string)
+</code></pre>
 
-Return token symbol: HETA.
+<p>Return token symbol: HETA.</p>
 
-```
-function decimals() public pure returns(uint8)
-```
- 
-Return token decimals: 18.
+<pre><code>function decimals() public pure returns(uint8)
+</code></pre>
 
-```
-function totalSupply() public view returns (uint256)
-```
+<p>Return token decimals: 18.</p>
 
-Return total supply of token issues: 60 billion.
+<pre><code>function totalSupply() public view returns (uint256)
+</code></pre>
 
-```
-function balanceOf(address owner) public view returns (uint256)
-```
+<p>Return total supply of token issues: 60 billion.</p>
 
-Return the balance of a nominated address **owner**: The parameter is the address owner.
+<pre><code>function balanceOf(address owner) public view returns (uint256)
+</code></pre>
 
-```
-function allowance(address owner, address spender) public view returns (uint256)
-```
+<p>Return the balance of a nominated address <strong>owner</strong>: The parameter is the address owner.</p>
 
-Return the number of the token that the address **owner** allows the address **spender** to use.
+<pre><code>function allowance(address owner, address spender) public view returns (uint256)
+</code></pre>
 
-``` 
-function increaseAllowance(address spender, uint256 addedValue) public returns (bool)
-```
+<p>Return the number of the token that the address <strong>owner</strong> allows the address <strong>spender</strong> to use.</p>
 
-Increase the number of the token that the address **spender** can use (thanks to the address **owner**) .
+<pre><code class="  language- ">function increaseAllowance(address spender, uint256 addedValue) public returns (bool)
+</code></pre>
 
-```
-function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool)
-```
+<p>Increase the number of the token that the address <strong>spender</strong> can use (thanks to the address <strong>owner</strong>) .</p>
 
-Decrease the number of the token that the address **spender** can use (as the address **owner** increases).
+<pre><code>function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool)
+</code></pre>
 
-```
-function transfer(address to, uint256 value) public returns (bool)
-```
+<p>Decrease the number of the token that the address <strong>spender</strong> can use (as the address <strong>owner</strong> increases).</p>
 
-Forward the token to the address **to**: The parameter is the address to and the number of the token to be forwarded.
+<pre><code>function transfer(address to, uint256 value) public returns (bool)
+</code></pre>
 
-```
-function transferFrom(address from, address to, uint256 value) public returns (bool)
-```
+<p>Forward the token to the address <strong>to</strong>: The parameter is the address to and the number of the token to be forwarded.</p>
 
-Forward the token from the address **from** to the address **to**. 
+<pre><code>function transferFrom(address from, address to, uint256 value) public returns (bool)
+</code></pre>
 
-```
-function batchTransfer(address[] tos, uint256[] values) public returns (bool)
-```
+<p>Forward the token from the address <strong>from</strong> to the address <strong>to</strong>. </p>
 
-Forward the token to many **address-tos**: the parameter is the list of many address-tos and the number of the token to be forwarded to each address.
+<pre><code>function batchTransfer(address[] tos, uint256[] values) public returns (bool)
+</code></pre>
 
-```
-function approve(address spender, uint256 value) public returns (bool)
-```
+<p>Forward the token to many <strong>address-tos</strong>: the parameter is the list of many address-tos and the number of the token to be forwarded to each address.</p>
 
-Approve to forward the token to the address **spender**.
+<pre><code>function approve(address spender, uint256 value) public returns (bool)
+</code></pre>
 
-```
-event Burn(address indexed burner, uint256 value);
-```
+<p>Approve to forward the token to the address <strong>spender</strong>.</p>
 
-Event **burn token**.
+<pre><code>event Burn(address indexed burner, uint256 value);
+</code></pre>
 
-Used when not all tokens are distributed after ICO.
+<p>Event <strong>burn token</strong>.</p>
 
-**Need to finalize the procedure to burn token: when to start and the conditions to burn?**
+<p>Used when not all tokens are distributed after ICO.</p>
 
-```
-function burn(uint256 value) public 
-```
+<p><strong>Need to finalize the procedure to burn token: when to start and the conditions to burn?</strong></p>
 
-Allow to burn a given number of token of a nominated address owner.
+<pre><code>function burn(uint256 value) public 
+</code></pre>
 
-Used when not all tokens are distributed after ICO.
+<p>Allow to burn a given number of token of a nominated address owner.</p>
 
-**Need to finalize the procedure to burn token: when to start and the conditions to burn?**
+<p>Used when not all tokens are distributed after ICO.</p>
 
-```
-function burnFrom(address from, uint256 value) public 
-```
+<p><strong>Need to finalize the procedure to burn token: when to start and the conditions to burn?</strong></p>
 
-Allow to burn a given number of the token of a nominated address owner: The parameter is the address and the number of token to burn.
+<pre><code>function burnFrom(address from, uint256 value) public 
+</code></pre>
 
-Used when not all tokens are distributed after ICO.
+<p>Allow to burn a given number of the token of a nominated address owner: The parameter is the address and the number of token to burn.</p>
 
-**Need to finalize the procedure to burn token: when to start and the conditions to burn?**
+<p>Used when not all tokens are distributed after ICO.</p>
 
-```
-function TokenTimelock(ERC20Basic _token, address _beneficiary, uint64 _releaseTime) public
-```
+<p><strong>Need to finalize the procedure to burn token: when to start and the conditions to burn?</strong></p>
 
-Allow to lock a given number of the token of the nominated address with the releaseTime: The parameters are the number of token, the address and the lock time.
-Used when it is necessary to lock all tokens of the founder team, development team, etc. within the period of **releaseTime, withdrawing or forwarding token is only approved after this period.**
+<pre><code>function TokenTimelock(ERC20Basic _token, address _beneficiary, uint64 _releaseTime) public
+</code></pre>
 
-```
-function release() public 
-```
+<p>Allow to lock a given number of the token of the nominated address with the releaseTime: The parameters are the number of token, the address and the lock time.
+Used when it is necessary to lock all tokens of the founder team, development team, etc. within the period of <strong>releaseTime, withdrawing or forwarding token is only approved after this period.</strong></p>
 
-Allow to unlock the token of the nominated address after the lock time exhausts.
+<pre><code>function release() public 
+</code></pre>
+
+<p>Allow to unlock the token of the nominated address after the lock time exhausts.
 The parameters are the number of token, the address and the lock time.
-Used when it is necessary to lock all tokens of the founder team, development team, etc. within the period of **releaseTime, withdrawing or forwarding token is only approved after this period.**
+Used when it is necessary to lock all tokens of the founder team, development team, etc. within the period of <strong>releaseTime, withdrawing or forwarding token is only approved after this period.</strong></p>
 
-```
-function pause() public
-```
+<pre><code>function pause() public
+</code></pre>
 
-Allow an admin address to pause forwarding the token to other addresses.
+<p>Allow an admin address to pause forwarding the token to other addresses.</p>
 
-**The risk is that the admin address may lose its private key.**
+<p><strong>The risk is that the admin address may lose its private key.</strong></p>
 
-```
-function resume() public
-```
+<pre><code>function resume() public
+</code></pre>
 
-Allow an admin address to resume the pause of forwarding the token to other addresses. 
+<p>Allow an admin address to resume the pause of forwarding the token to other addresses. </p>
 
-**The risk is that the admin address may lose its private key.**
+<p><strong>The risk is that the admin address may lose its private key.</strong></p>
 
-### Compiled with [Truffle](https://truffleframework.com/)
+<h3 id="compiledwithtrufflehttpstruffleframeworkcom">Compiled with <a href="https://truffleframework.com/">Truffle</a></h3>
 
-## Deployment on ropsten
+<h2 id="deploymentonropsten">Deployment on ropsten</h2>
 
-### Ropsten testnet
+<h3 id="ropstentestnet">Ropsten testnet</h3>
 
-Token contract:
+<p>Token contract:</p>
 
-```
-https://ropsten.etherscan.io/token/0xf12f62e5b7e37b883c51190b35d151fce561f12f
-```
+<pre><code>https://ropsten.etherscan.io/token/0xf12f62e5b7e37b883c51190b35d151fce561f12f
+</code></pre>
 
-Team's funding lock contract:
+<p>Team's funding lock contract:</p>
 
-```
-https://ropsten.etherscan.io/address/0xf88031112b84d03f1621a39d243015c75659b609
-```
+<pre><code>https://ropsten.etherscan.io/address/0xf88031112b84d03f1621a39d243015c75659b609
+</code></pre>
 
-Advisors' funding lock contract:
+<p>Advisors' funding lock contract:</p>
 
-```
-https://ropsten.etherscan.io/address/0x2cb9c99fe6472cb60408c72f9db7cac0ccd6d14a
-```
+<pre><code>https://ropsten.etherscan.io/address/0x2cb9c99fe6472cb60408c72f9db7cac0ccd6d14a
+</code></pre>
 
-### Rinkeby testnet
+<h3 id="rinkebytestnet">Rinkeby testnet</h3>
 
-Token contract:
+<p>Token contract:</p>
 
-```
-https://rinkeby.etherscan.io/token/0xf12f62e5b7e37b883c51190b35d151fce561f12f
-```
+<pre><code>https://rinkeby.etherscan.io/token/0xf12f62e5b7e37b883c51190b35d151fce561f12f
+</code></pre>
 
-Team's funding lock contract: 
+<p>Team's funding lock contract: </p>
 
-```
-https://rinkeby.etherscan.io/address/0xf88031112b84d03f1621a39d243015c75659b609
-```
+<pre><code>https://rinkeby.etherscan.io/address/0xf88031112b84d03f1621a39d243015c75659b609
+</code></pre>
 
-Advisors' funding lock contract:
+<p>Advisors' funding lock contract:</p>
 
-```
-https://rinkeby.etherscan.io/address/0x2cb9c99fe6472cb60408c72f9db7cac0ccd6d14a
-```
+<pre><code>https://rinkeby.etherscan.io/address/0x2cb9c99fe6472cb60408c72f9db7cac0ccd6d14a
+</code></pre>
 
-## License
+<h2 id="license">License</h2>
 
-The [MIT](https://choosealicense.com/licenses/mit/) License
+<p>The <a href="https://choosealicense.com/licenses/mit/">MIT</a> License</p>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
